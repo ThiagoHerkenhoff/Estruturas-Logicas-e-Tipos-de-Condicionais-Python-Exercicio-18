@@ -1,0 +1,30 @@
+# 18 - Faça um programa que mostre ao usuário um menu com 4 opções de operações matemáticas(as básicas, por exemplo).
+# O usuário escolhe uma das opções e o seu programa entãopede dois valores numéricos e realiza a operação, mostrando
+# o resultado e saindo.
+
+print("1 - Soma")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Subtração")
+
+operacao = int(input("Escolha uma das operação acima: "))
+
+if operacao >= 1 and operacao <= 4:
+    n1 = float(input("Informe o primeiro número: "))
+    n2 = float(input("Informe o segundo número: "))
+
+    if operacao == 1:
+        soma = n1 + n2
+        print(f"A soma entre {n1} e {n2} é de {soma}")
+    elif operacao == 2:
+        subtracao = n1 - n2
+        print(f"A subtração entre {n1} e {n2} é de {subtracao}")
+    elif operacao == 3:
+        multiplicacao = n1 * n2
+        print(f"A multiplicação entre {n1} e {n2} é de {multiplicacao}")
+    else:
+        operacao == 4
+        divisao = n1 / n2
+        print(f"A divisão entre {n1} e {n2} é de {divisao}")
+else:
+    print("Operação escolhida inválida")
